@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .user_data {
+            margin: 50px;
+            margin-top: 0px;
+        }
+        table{
+            border: none;
+            text-align: center;
+            margin-top: 15px;
+            margin-bottom: 50px;
+        }
+    </style>
+    <title>JS Practice</title>
+</head>
+<body>
+    <div class="user_data">
+        <h2>User Information</h2>
+        <form id="form">
+            <label for="userId">User ID: </label> <br>
+            <input type="number" id="userId" placeholder="Enter User ID" name="userId" required> <br><br>
+            <label for="fName">First Name: </label> <br>
+            <input type="text" id="fName" name="fName" placeholder="Enter User First Name" required> <br><br>
+            <label for="lName">Last Name: </label> <br>
+            <input type="text" id="lName" name="lName" placeholder="Enter User Last Name" required> <br><br>
+            <label for="phone">Phone Number: </label> <br>
+            <input type="number" id="phone" name="phone" placeholder="Enter User Phone Number" required> <br><br>
+            <label for="email">Email: </label> <br>
+            <input type="email" id="email" name="email" placeholder="Enter User Email Address" required> <br><br>
+            <label for="age">Age: </label> <br>
+            <input type="number" id="age" name="age" placeholder="Enter User Age" required> <br><br>
+            <button id="addUser" type="submit">Add User</button> <br><br>
+        </form>
+        <hr>
+        <h2>User Data Table</h2>
+        <input id="searchId" type="number" placeholder="Enter User ID to Search">
+        <button id="searchUser">Search User</button>
+        <table border>
+            <thead>
+                <tr>
+                    <td>User ID</td>
+                    <td>First Name</td>
+                    <td>Last Name</td>
+                    <td>Phone Number</td>
+                    <td>Email Address</td>
+                    <td>Age</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="id"></td>
+                    <td class="fName"></td>
+                    <td class="lName"></td>
+                    <td class="phone"></td>
+                    <td class="email"></td>
+                    <td class="age"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
